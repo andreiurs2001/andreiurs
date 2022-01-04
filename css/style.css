@@ -1,0 +1,62 @@
+.flex {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  display: flex; }
+  .flex_colomn1 {
+    position: relative;
+    width: 50%;
+    height: 100vh; }
+  .flex_colomn1 {
+    position: relative; }
+    .flex_colomn1_content {
+      transition: all .2s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.171)); }
+    .flex_colomn1_video {
+      position: relative;
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+      -webkit-object-fit: cover; }
+    .flex_colomn1:hover .flex_colomn1_content {
+      background-color: #1b0096;
+      transition: all .2s; }
+  .flex_colomn2 {
+    position: relative;
+    width: 50%;
+    height: 100vh; }
+  .flex_colomn2 {
+    position: relative;
+    background-image: url(../Images/poza_jocuri.jpg);
+    background-size: cover;
+    background-position: center center; }
+    .flex_colomn2_content {
+      transition: all .2s;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.171), rgba(0, 0, 0, 0.171)); }
+    .flex_colomn2:hover .flex_colomn2_content {
+      background-color: #1b0096;
+      transition: all .2s; }
+
+.background_2 {
+  background-color: red; }
+
+.box-shadow {
+  background-color: rgba(0, 0, 0, 0.322);
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  box-shadow: 0 5rem 4rem rgba(0, 0, 0, 0.65); }
+
+/*
+    .flex {}
+    .flex_colomn1{}
+    */

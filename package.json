@@ -1,0 +1,22 @@
+{
+  "name": "andreiurs",
+  "version": "1.0.0",
+  "description": "Portfolio Site",
+  "main": "index.js",
+  "scripts": {
+    "compile": "node-sass sass/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreiurs2001/andreiurs.git"
+  },
+  "author": "Andrei Ursachi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreiurs2001/andreiurs/issues"
+  },
+  "homepage": "https://github.com/andreiurs2001/andreiurs#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1"
+  }
+}
