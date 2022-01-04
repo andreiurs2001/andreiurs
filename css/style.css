@@ -4,10 +4,17 @@
   height: 100vh;
   width: 100%;
   display: flex; }
+  @media only screen and (max-width: 800px) {
+    .flex {
+      flex-direction: column; } }
   .flex_colomn1 {
     position: relative;
     width: 50%;
     height: 100vh; }
+    @media only screen and (max-width: 800px) {
+      .flex_colomn1 {
+        width: 100%;
+        height: 50vh; } }
   .flex_colomn1 {
     position: relative; }
     .flex_colomn1_content {
@@ -23,6 +30,9 @@
       width: 100%;
       object-fit: cover;
       -webkit-object-fit: cover; }
+      @media only screen and (max-width: 800px) {
+        .flex_colomn1_video {
+          height: 50vh; } }
     .flex_colomn1:hover .flex_colomn1_content {
       background-color: #1b0096;
       transition: all .2s; }
@@ -30,6 +40,10 @@
     position: relative;
     width: 50%;
     height: 100vh; }
+    @media only screen and (max-width: 800px) {
+      .flex_colomn2 {
+        width: 100%;
+        height: 50vh; } }
   .flex_colomn2 {
     position: relative;
     background-image: url(../Images/poza_jocuri.jpg);

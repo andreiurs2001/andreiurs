@@ -4,10 +4,17 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    @media only screen and (max-width: 800px) {
+        flex-direction: column;   
+    }
     &_colomn1 {
         position: relative;
         width: 50%;
         height: 100vh;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+            height: 50vh;
+        }
 
     }
     &_colomn1 {
@@ -27,6 +34,9 @@
             width: 100%;
             object-fit: cover;
             -webkit-object-fit: cover;
+            @media only screen and (max-width: 800px) {
+                height: 50vh;
+            }
             
         }
 
@@ -40,6 +50,10 @@
         position: relative;
         width: 50%;
         height: 100vh;
+        @media only screen and (max-width: 800px) {
+            width: 100%;
+            height: 50vh;
+        }
 
     }
     &_colomn2 {
