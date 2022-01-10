@@ -1,3 +1,106 @@
+#preloader {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgb(25,25,31);
+    z-index: 9999900;
+}
+
+.text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999900;
+}
+
+.type-js {
+    position: relative;
+    padding: 15px 30px;
+    background-color: rgb(25,25,31);
+    z-index: 9999900;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -.75%;
+        left: -.75%;
+        height: 103.5%;
+        width: 101.5%;
+        background-image: linear-gradient(60deg, #08f7fe 0%, #f5d300 100%, #fe53bb 200%, #08f7fe 300%);
+        background-size: 300%;
+        box-shadow: 0 2rem 5rem rgba(255, 255, 255, 0.3);
+        animation-name: back;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+        z-index: -1;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 999;
+        height: 100%;
+        width: 0;
+        background-color: rgb(25,25,31);
+        animation-name: before-a;
+        animation-duration: 2.5s;
+        animation-iteration-count: 1;
+    }
+}
+
+@keyframes before-a {
+    0% {
+        width: 100%;
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 75% 75%;
+    }
+
+    50% {
+        background-position: 150% 150%;
+    }
+
+    75% {
+        background-position: 225% 225%;
+    }
+
+    100% {
+        width: 0%;
+        background-position: 300% 300%;
+    }
+
+}
+
+@keyframes back {
+    0% {
+        width: 0;
+        background-position: 0 0;
+    }
+
+    25% {
+        background-position: 75% 75%;
+    }
+
+    50% {
+        background-position: 150% 150%;
+    }
+
+    75% {
+        background-position: 225% 225%;
+    }
+
+    100% {
+        width: 101.5%;
+        background-position: 300% 300%;
+    }
+}
+
 .navbar_new {
 
 
@@ -499,6 +602,22 @@
         position: relative;
         &::after {
             content: "Contact";
+            position: absolute;
+            color: rgba(192,192,192,0.6);
+            top: -40%;
+            width: 100%;
+            font-size: 120%;
+            z-index: -1;
+            text-shadow: 0 20px 10px rgba(192,192,192,0.6);
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    &qa {
+        position: relative;
+        &::after {
+            content: "Q&A";
             position: absolute;
             color: rgba(192,192,192,0.6);
             top: -40%;
